@@ -1,3 +1,86 @@
-body{
-    background: #0F0E0E;
+/* Resseting styles */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+/* ----------------------- */
+body {
+  background: #0f0e0e;
+}
+header {
+  height: 100vh;
+  font-family: "Roboto Slab", serif;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  display: grid;
+  background-image: url("../images/background.jpg");
+  background-position: top;
+  background-size: cover;
+  text-shadow: 2px 2px 4px #000000;
+}
+.menu {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  gap: 75px;
+  font-size: 16px;
+  min-height: 150px;
+}
+.menu__element {
+  cursor: pointer;
+  font-weight: 500;
+  transition: 1s transform;
+  padding: 10px;
+}
+.menu__logo {
+  max-width: 100px;
+  height: 100px;
+}
+.menu__element:hover {
+  transform: scale(1.2);
+}
+
+.header__texts-box {
+  font-family: "Roboto Slab", serif;
+}
+.header__text--big {
+  font-size: 64px;
+  font-weight: 400;
+}
+.header__text--medium {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 300;
+}
+.header__arrow_container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.header__image-arrow {
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  position: absolute;
+  animation: moveUpDown 1.5s ease-in-out infinite;
+  margin-top: 40px;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
