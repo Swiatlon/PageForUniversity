@@ -6,16 +6,23 @@
   box-sizing: inherit;
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 /* ----------------------- */
 body {
   background: #0f0e0e;
+  font-family: "Roboto Slab", serif;
+  color: white;
+}
+h2 {
+  font-weight: 400;
+  font-size: 32px;
+  padding-bottom: 20px;
+}
+h3 {
+  font-weight: 400;
 }
 header {
   height: 100vh;
-  font-family: "Roboto Slab", serif;
-  color: white;
   text-align: center;
   justify-content: center;
   justify-items: center;
@@ -24,6 +31,7 @@ header {
   background-position: top;
   background-size: cover;
   text-shadow: 2px 2px 4px #000000;
+  padding-bottom: 20px;
 }
 .menu {
   margin-top: 25px;
@@ -32,6 +40,8 @@ header {
   gap: 75px;
   font-size: 16px;
   min-height: 150px;
+  text-decoration: none;
+  list-style-type: none;
 }
 .menu__element {
   cursor: pointer;
@@ -47,9 +57,6 @@ header {
   transform: scale(1.2);
 }
 
-.header__texts-box {
-  font-family: "Roboto Slab", serif;
-}
 .header__text--big {
   font-size: 64px;
   font-weight: 400;
@@ -71,6 +78,56 @@ header {
   position: absolute;
   animation: moveUpDown 1.5s ease-in-out infinite;
   margin-top: 40px;
+}
+section {
+  max-width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.section-inside-container {
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.section-explore__description,
+.section-about-us__description {
+  font-weight: 300;
+  max-width: 650px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.section-explore__box-images {
+  display: flex;
+  margin-top: 40px;
+  gap: 10px;
+}
+.section-explore__image {
+  width: calc(33% - 10px);
+  height: 550px;
+  box-shadow: 0px 0px 6px rgb(102, 101, 101);
+  transition: 1s all;
+}
+.section-explore__image:hover {
+  transform: scale(1.08);
+  z-index: 100;
+}
+.section-about-us {
+  background: #110f0f;
+}
+.section-about-us__content-box {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.section-about-us__content-box img {
+  width: 80%;
+  transition: 1s all;
+  padding-bottom: 30px;
+}
+.section-about-us__content-box img:hover {
+  transform: scale(1.2);
 }
 
 @keyframes moveUpDown {
