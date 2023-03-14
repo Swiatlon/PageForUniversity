@@ -215,6 +215,32 @@ form button {
   border: none;
   margin-bottom: 25px;
 }
+footer {
+  background: rgb(17, 16, 16);
+  padding: 50px 0px;
+}
+footer h3 {
+  font-size: 24px;
+}
+footer p {
+  margin-top: 20px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 12px;
+}
+footer img {
+  width: 32px;
+  height: auto;
+  cursor: pointer;
+  padding: 25px;
+}
+.footer-center-content {
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
 
 /* custom styles */
 .full-screen {
@@ -225,6 +251,9 @@ form button {
   left: 0;
   background: rgba(0, 0, 0, 0.7);
   z-index: 9999;
+}
+.small{
+  font-size: 12px;
 }
 
 @keyframes moveUpDown {
