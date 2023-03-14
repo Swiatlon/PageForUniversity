@@ -29,18 +29,22 @@ hamburger.addEventListener("click", function () {
   body.classList.toggle("extend");
   menu.classList.toggle("extend");
 });
-menuElements.forEach(item => item.addEventListener('click',function(){
-  body.classList.remove("extend");
-  menu.classList.remove("extend");
-}))
+menuElements.forEach((item) =>
+  item.addEventListener("click", function () {
+    body.classList.remove("extend");
+    menu.classList.remove("extend");
+  })
+);
 
 let timer;
 window.addEventListener("resize", function () {
-  clearTimeout(timer);
-  timer = setTimeout(function () {
-    body.classList.remove("extend");
-    menu.classList.remove("extend");
-  }, 1000);
+  if (body.classList[0] == "extend") {
+    clearTimeout(timer);
+    timer = setTimeout(function () {
+      body.classList.remove("extend");
+      menu.classList.remove("extend");
+    }, 1000);
+  }
 });
 
 // Increasing the photo on click
