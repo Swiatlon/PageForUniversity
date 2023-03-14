@@ -9,6 +9,7 @@ const aboutUs = document.querySelector("#aboutUs");
 const explore = document.querySelector("#explore");
 const ourPhotos = document.querySelector("#ourPhotos");
 const contact = document.querySelector("#contact");
+const form = document.querySelector("form");
 const images = [...document.querySelectorAll("section img")];
 // Moving Page
 function scrollSmooth(element, where) {
@@ -20,6 +21,7 @@ scrollSmooth(arrowDown, exploreTitle);
 scrollSmooth(explore, exploreTitle);
 scrollSmooth(aboutUs, aboutUsTitle);
 scrollSmooth(ourPhotos, photoTitle);
+scrollSmooth(contact, form);
 
 // Menu
 hamburger.addEventListener("click", function () {
