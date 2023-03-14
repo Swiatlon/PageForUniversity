@@ -11,6 +11,7 @@ const ourPhotos = document.querySelector("#ourPhotos");
 const contact = document.querySelector("#contact");
 const form = document.querySelector("form");
 const images = [...document.querySelectorAll("section img")];
+const menuElements = [aboutUs, explore, ourPhotos, contact];
 // Moving Page
 function scrollSmooth(element, where) {
   element.addEventListener("click", function () {
@@ -28,6 +29,10 @@ hamburger.addEventListener("click", function () {
   body.classList.toggle("extend");
   menu.classList.toggle("extend");
 });
+menuElements.forEach(item => item.addEventListener('click',function(){
+  body.classList.remove("extend");
+  menu.classList.remove("extend");
+}))
 
 let timer;
 window.addEventListener("resize", function () {
