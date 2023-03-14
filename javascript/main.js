@@ -35,7 +35,7 @@ window.addEventListener("resize", function () {
   timer = setTimeout(function () {
     body.classList.remove("extend");
     menu.classList.remove("extend");
-  }, 3000);
+  }, 1000);
 });
 
 // Increasing the photo on click
