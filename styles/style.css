@@ -330,6 +330,9 @@ footer img {
   form {
     width: 80%;
   }
+  footer p{
+    width: 100%;
+  }
 }
 
 @media (max-width: 500px) {
